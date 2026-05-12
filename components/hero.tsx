@@ -136,12 +136,13 @@ export function Hero() {
       {/* Main Content - Scramble Text */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div 
-          className="text-[18vw] md:text-[15vw] lg:text-[12vw] font-black text-neutral-900 select-none pointer-events-none transition-all duration-500"
+          className="text-[18vw] md:text-[15vw] lg:text-[12vw] text-neutral-900 select-none pointer-events-none transition-all duration-500"
           style={{
             filter: isHovering ? 'blur(0px)' : 'blur(4px)',
             opacity: mounted ? 1 : 0,
             letterSpacing: '-0.02em',
-            fontFamily: "'Underground', sans-serif"
+            fontFamily: "'Underground', sans-serif",
+            fontWeight: 900,
           }}
         >
           {displayText}
