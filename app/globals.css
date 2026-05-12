@@ -83,7 +83,7 @@
 }
 
 @theme inline {
-  --font-sans: 'Underground', sans-serif;
+  --font-sans: 'Inter', Arial, sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -129,8 +129,11 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Underground', sans-serif;
   }
+}
+
+.font-underground {
+  font-family: 'Underground', sans-serif;
 }
 
 /* Custom scrollbar */
