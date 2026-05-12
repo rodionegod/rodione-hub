@@ -141,7 +141,7 @@ export function Hero() {
             filter: isHovering ? 'blur(0px)' : 'blur(4px)',
             opacity: mounted ? 1 : 0,
             letterSpacing: '-0.02em',
-            fontFamily: "'Underground', sans-serif",
+            fontFamily: 'var(--font-underground)',
             fontWeight: 900,
           }}
         >

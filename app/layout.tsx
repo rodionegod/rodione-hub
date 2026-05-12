@@ -1,16 +1,24 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const geistSans = Geist({ 
+const geistSans = Geist({
   subsets: ["latin"],
   variable: '--font-geist-sans',
 })
 
-const geistMono = Geist_Mono({ 
+const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: '--font-geist-mono',
+})
+
+const underground = localFont({
+  src: '../public/fonts/Underground.ttf',
+  variable: '--font-underground',
+  weight: '100 900',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -55,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-background`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${underground.variable} bg-background`}>
       <body className="font-sans antialiased min-h-screen bg-background text-foreground">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
