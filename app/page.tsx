@@ -1,34 +1,23 @@
-import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
-import { FeaturedProduct } from "@/components/featured-product"
-import { WhatsInside } from "@/components/whats-inside"
-import { SeeItInAction } from "@/components/see-it-in-action"
-import { Portfolio } from "@/components/portfolio"
-import { Store } from "@/components/store"
-import { Community } from "@/components/community"
-import { FAQ } from "@/components/faq"
-import { Contact } from "@/components/contact"
+import { Order } from "@/components/order"
+import { Works } from "@/components/works"
+import { Packs } from "@/components/packs"
+import { PriceList } from "@/components/price-list"
+import { HowToOrder } from "@/components/how-to-order"
+import { Extras } from "@/components/extras"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <>
-      {/* Hero section with light background */}
+    <main className="bg-white">
       <Hero />
-      
-      {/* Main content with dark background */}
-      <main className="min-h-screen bg-background">
-        <Header />
-        <FeaturedProduct />
-        <WhatsInside />
-        <SeeItInAction />
-        <Portfolio />
-        <Store />
-        <Community />
-        <FAQ />
-        <Contact />
-        <Footer />
-      </main>
-    </>
+      <Order />
+      <Works />
+      <Packs />
+      <PriceList />
+      <HowToOrder />
+      <Extras />
+      <Footer />
+    </main>
   )
 }

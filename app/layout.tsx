@@ -22,11 +22,11 @@ const underground = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'RodiOne Hub | Digital Tools for Video Editors',
-  description: 'Digital tools, templates and editing services for creators and video editors. Premium editing packs, motion graphics, and workflow tools built for editors, by an editor.',
-  keywords: ['video editing', 'premiere pro', 'after effects', 'youtube', 'creator tools', 'editing templates', 'motion graphics'],
-  authors: [{ name: 'RodiOne' }],
-  creator: 'RodiOne',
+  title: 'RODIONE — Video Editor & Creator',
+  description: 'Монтаж видео, Reels, TikTok, YouTube. Работаю с блогерами, брендами, бизнесами и артистами.',
+  keywords: ['video editing', 'монтаж видео', 'reels', 'tiktok', 'youtube', 'видеомонтаж', 'creator'],
+  authors: [{ name: 'Rodione' }],
+  creator: 'Rodione',
   icons: {
     icon: [
       {
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'RodiOne Hub | Digital Tools for Video Editors',
-    description: 'Digital tools, templates and editing services for creators and video editors.',
+    title: 'RODIONE — Video Editor & Creator',
+    description: 'Монтаж видео, Reels, TikTok, YouTube. Работаю с блогерами, брендами и артистами.',
     type: 'website',
   },
 }
